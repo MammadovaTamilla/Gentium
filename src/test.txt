@@ -1,0 +1,21 @@
+
+    li {
+      font-size: 18px;
+      font-family: sans-serif;
+      font-weight: bold;
+      list-style: none;
+      position: relative;
+    }
+    li::before {
+      content: "";
+      background-color: #e9204f;
+      position: absolute;
+      width: 0px;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    }
+    li:hover::before {
+      width: 20px;
+    }
